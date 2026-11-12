@@ -346,7 +346,7 @@
 
   function dirCard(name) {
     var items = filterItems(state.dirs[name] || []);
-    var total = (state.dirs[name] || []).length;
+    var total = items.length;
     var desc = DIR_DESC[name] || "目录资源";
     var rows = items.map(fileRow).join("");
     if (!items.length) {
